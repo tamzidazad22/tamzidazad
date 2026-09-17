@@ -1,0 +1,418 @@
+## Page 1
+First Part
+Story of  a Project of  Which I am proud
+Portfolio - Tamzid Azad
+
+
+## Page 2
+Year: 2017 - 2018
+Tamzid Azad
+Story Highlights: 
+• Became global champion at Telenor Group’s internal incubator.
+• Received a seed fund of  $10000. 
+• As the product manager, designed and developed a fuel sensing IoT 
+solution for Corporate fleet owners to tackle fuel theft.
+
+## Page 3
+Background:
+I had spent more than 2 years designing, deploying and driving growth of OTT & IoT products while working as Product Manager at two 
+of the largest digital services provider of Bangladesh. A turning point came in 2017, when I saw a poster of ‘Ignite’ (global incubator 
+hosted by Telenor group among the employees of it’s offices in 13 countries) in our office. I was quickly motivated to participate. I 
+needed two other person to form a team. With some effort, I managed to persuade two of my colleagues to team together with me. In 
+January 2017, after 3 stages of initial screening, we made it to the top 10 out of 180 global teams. 
+3 days Design Sprint workshop conducted by Fresh Tilled Soil. 
+During the program we were sent to Norway, Singapore and Myanmar to attend trainings on how to build a product from scratch. We 
+eventually ended the program as Global Champions. After the incubator ended, our mission to launch this as a commercial product started.
+
+## Page 4
+The problem: In many places of the world, especially in Southeast Asia, fuel theft committed by chauffeurs and fuel pump workers is a 
+chronic problem. In Bangladesh only the Dhaka North City Corporation lost $20M in 2015 alone from fuel theft and receipt forgery. The
+problem was this acute because the existing methods of tracking fuel costs were manual, done with pen and paper and based on trust.
+The solution: Our idea was to tackle fuel theft from vehicles and pumps using IoT. The objective was to enable fleet managers with real 
+time data(collected through a sensor placed in vehicle) on amount of fuel present in his/her vehicles.
+The journey of turning this idea into a product can be divided into 3 parts-
+1. Knowing the users
+2. Getting validation through Low fidelity prototypes
+3. Development and Deployment
+Live incidents of fuel theft in Dhaka , A chauffeur, Abdus Salam(31) confessing he has done it multiple times himself, Interview with a fleet manager to know more about the pain points
+
+
+## Page 5
+1. Knowing the users: 
+Before building anything we wanted to cover perspectives of all 
+stakeholders involved. We started our exploratory research to build 
+user personas. After a month we could come up with three key 
+personas. We built empathy maps and user journeys for all the 
+personas to grasp a better understanding on their pain points. It was 
+also clear from the research that fleet managers will be our primary 
+users as drivers accountability is based on the real time data.
+User personas 
+2. Getting validation through Low fidelity prototypes:
+Fleet managers generally have average to below average 
+tech savviness. A key insight was that they need fuel data 
+mostly to make reports that they use to pay bills to fuel 
+pumps. So in our first prototype, we made the simplest 
+webpage where they could download reports from. 
+We didn’t have real time data or any backend then. So we 
+had to manually collect data and put in the webpage 
+everyday for the fleet managers to download. This gave 
+them an almost real time feel. And this resulted into an 
+overwhelming validation. Fleet managers testified that the 
+major pain of not being able to answer to management and 
+prevent theft/forgery of fuel receipt could be tackled if they 
+had this data.
+
+
+## Page 6
+2. Development and Deployment
+With the validation from fleet managers, we embarked into development. We hired a developer, took a device partner onboard and made 
+our squad for development. We followed the SCRUM methodology and agile principles. 
+We hit a major speed bump while designing technology architecture. In our research, fleet managers said they were sensitive about putting 
+an external hardware inside the vehicle fuel tank due to security concerns. So we had to pivot and spend another month of RnD and testing 
+to come up with a new technology that could tell the amount of fuel present in a vehicle tank without putting any sensor inside the fuel 
+tank. We developed the front in 5 iterations keeping it aligned with continuous feedback from fleet managers. With the backend already set 
+up, the solution was ready for deployment
+Expanding dev team Testing non-invasive fuel sensor
+
+## Page 7
+Results/Impact:
+We released the beta version of the product in July 2018. And to-date it has saved 32% cost 
+by preventing/tracking fuel theft in 4 fleets where we deployed the solution. 
+Taking an idea and turning it into a product and in effect providing a solution for a big social 
+problem has been the most fulfilling experience of my career so far. It was a cherry on top 
+to watch it being recognized when Eagle Eye won 2nd Prize(Best Technology Innovation) in 
+Bangladesh Innovation Awards 2018.
+Go to Web portal Watch Short video
+live fuel levels in your vehicles
+Download fuel usage reports
+Fuel withdrawal(potential 
+theft) reports
+check mileage and 
+performance
+Suspicious Issues reporting 
+and tracking
+1. Product Incubation tools and methods
+2. In the ideation phase it’s best to discount technology
+3.  Familiarization and first hand implementation of IBM 
+design thinking principles
+Key Takeaways from the experience:
+
+## Page 8
+Second Part
+Best and Recent Work
+
+## Page 9
+1. Grameenphone Open Innovation Funnel
+METHODOLOGY
+• Design Experiments
+• Solution Storming
+• Design Paper Prototype
+• Design Medium Fidelity 
+Prototype
+• User Journey, Six-ups
+CAPABILITIES
+• User Researcher
+• User Journey Experts
+• Interaction Designer
+• UX Developer
+OUTPUT
+• A Functional prototype 
+(At least 3 iterations 
+completed)
+• Individual functional 
+prototype for all 
+scenarios
+• Prototype catering to all 
+pain points
+METHODOLOGY
+• Launch prototype in a 
+controlled user base
+• Observe user behaviour 
+and feedback
+• Conduct Tech feasibility, 
+model validation, pricing 
+exercise
+CAPABILITIES
+• Campaign Manager
+• Product Designer
+• Usability Analyst
+• User Journey Experts
+• Business Architect
+OUTPUT
+• User acquisition trend
+• User feedback -
+Desirability
+• Tech feasibility 
+• Business case
+METHODOLOGY
+• Validate 50-60% of the 
+Hypothesis
+• Validate Assumptions
+• Target Market 
+Identification
+• Thematic Analysis 
+• Market Data Assets
+CAPABILITIES
+• User Researcher
+• Product Manager
+OUTPUT
+• User Pain points
+• Empathy maps
+• User personas
+• Problem-Solution 
+Canvas
+METHODOLOGY
+• Gather ideas from 
+internal and external 
+sources 
+• Perform preliminary user 
+research
+• Fill out Exploration 
+Toolkit
+CAPABILITIES
+• User Researcher
+OUTPUT
+Filled up Exploration Toolkit
+• Problem Statement
+• Market Size
+• Assumptions
+• Problem Hypothesis
+Open 
+Innovation 
+Funnel
+UNDERSTAND
+2 WEEKS
+VALIDATE
+2-6 WEEKS
+DEEP DIVE
+4-6 WEEKS
+PROTOTYPE
+4-10 WEEKS
+MVP
+12-24
+WEEKS
+Grameenphone is Bangladesh’s largest 
+Telecom company with 72M customers. 
+Apart from Telecom services it also provides 
+streaming, entertainment, e-commerce 
+services and looking to expand it’s product 
+portfolio. The management wanted to form 
+a Innovation framework to channel all 
+Digital Product Innovation projects carried 
+out by the company.
+With this goal set, I have crafted this 
+framework from scratch. In addition to 
+heavy inspiration from IBM design thinking 
+principles, I have Collected insights on 
+product lifecycles in this market, 
+stakeholders’ expectations and innovators’ 
+capacity. Designed tools, methodologies, 
+capabilities and passing criteria for all 4 
+stages of the journey.Aligned all relevant 
+stakeholders for successful kick-off.
+The framework is now established with 
+projects already going through different 
+stages and it is considered as a part of the 
+company’s Innovation strategy
+
+## Page 10
+• What is your problem statement?
+• What sources and insights are you using?
+• What is the market size & competition? (Local & Global)
+• Is it a strategic fit?
+• What are the next deliverable?
+• What resources and budget are needed for Explore Stage?
+• What is the timeline for exploration?
+• What are the project KPIs?
+2 3 4
+UNDERSTAND DEEP DIVE PROTOTYPE VALIDATE
+1
+• Do you have a product market fit? What is the market size?
+• What are the results/traction which indicates move towards MVP?
+• Project Sponsors(internal department)
+• Is it a strategic fit?
+• How does the competition landscape look like?
+• What resources are needed?
+• What is the tentative budget for MVP Round 1?
+• What are your current and future Business Operating Model
+Gathering Insights Defining the Problem Building the Prototype Testing the Prototype
+1. Grameenphone Open Innovation Funnel(continued)
+Toll-Gate 1:
+ Innovation ideas are pitched to governing body. Governing body judges 
+the ideas based on following questions.
+ Ideas going forward gets the mandate, prototype fund and researchers
+Toll-Gate 2:
+ Prototypes with validation results are pitched to governing body. 
+Governing body judges the ideas based on following questions.
+ Ideas going forward gets labeled as “MVP”, gets budget for scaling
+
+## Page 11
+2. Explore Hub
+Full design link
+With the objective of  making the company’s innovation engine inclusive, 
+I (along with a co-worker) designed a platform where any employee can 
+come for exploration, look through and learn from case studies, get 
+familiarized with innovation toolkit and propose/submit a product 
+innovation idea.
+The design has 3 modules-
+1) Insight Vault: Company’s past failures, successes, industry case studies are 
+stored here.
+2) Innovation toolkit: tools such as empathy maps, six-up storyboarding, user 
+journey mapping, their user manuals and examples are given here.
+3) Idea submission: A template with examples on “explore start kit”
+I have sketched the interaction in marvel app. The initial design snippets and link is 
+given below. 
+
+
+## Page 12
+Explore Hub was later 
+decided to be integrated 
+with an existing HR 
+platform(OneGP) to 
+maximize reach. So I had 
+to pivot and rethink design 
+of  Explore Hub.
+I have worked with the 
+designer of  OneGP closely 
+to translate the previous 
+design to fit into the new 
+platform’s guidelines.
+The design is now set for 
+execution and the platform 
+is expected to be live in 
+early February 2019.
+2. Explore Hub
+
+## Page 13
+My Role:
+Innovation and it’s success is 
+based off on how perfectly 
+user’s needs are reflected in 
+a product. For a company like 
+Grameenphone which has 
+one of the best distributions 
+in the country covered by 
+over 1200 employees, it is in 
+best interest to involve all 
+those employees who are in 
+the closest interactions with 
+existing and potential users. 
+I have designed the incubator 
+platform, it’s activities, 
+methodologies and toolkits 
+that are needed. I have 
+conducted the prototyping 
+workshop(Sketch) myself 
+and assisted in other two 
+workshops.
+3. Discover-Sketch-Iterate(DSI) Model – Internal Incubator 
+Tools 
+• Current problem vs
+Current solution
+• User journey 
+template
+• Six up story boarding
+• Solution canvas
+• Low fidelity 
+prototyping tools
+Tasks
+• Map Current 
+problems to current 
+way solutions
+• Map user journey to 
+find pain points
+• Solution storming
+• Design low fidelity 
+prototype.
+SKETCH 
+DISCOVER
+Tasks
+• Create user 
+research plan
+• Create user 
+persona
+• Validate problem 
+statement
+• Validate 
+hypothesis/ 
+assumption
+• Validate market 
+size
+Tools
+• Primary and 
+secondary 
+research findings 
+(Thematic 
+Analysis 
+framework)
+• Empathy maps
+• Persona canvas
+Tools
+• Pilot plan for target 
+market
+• Low fidelity 
+prototyping tools
+• 3 iteration of 
+prototype
+• Scenario testing and 
+result
+• Sprint planning
+• Scrum framework
+CHECK 
+Boxes
+Tasks
+• Collect user 
+feedback through 
+in-depth interviews 
+& participant 
+observation
+• Incorporate 
+feedback through 7 
+days sprints(3 
+sprints).
+WORKSHOP
+User research 
+fundamentals
+ITERATE
+WORKSHOP
+First steps of 
+creation
+WORKSHOP
+Iterate towards 
+desirability 
+Timeline: 4 
+Weeks
+Timeline: 4 
+Weeks
+Timeline: 4 
+Weeks
+CHECK 
+Boxes
+Demo Day
+CHECK 
+Boxes
+•
+•
+•
+•
+•
+•
+•
+•
+•
+•
+•
+•
+•
+Digital Workforce 2020 platform –Internal Incubator facilitating Sales & Distribution employees
+
+## Page 14
+Fingertips. Platform to provide training to sales field 
+force with interactive contents.
+3. Discover-Sketch-Iterate(DSI) Model – Internal Incubator 
+Retail Flexi plan. App for telco retailers to offer 
+customized bundle products to customers at ago.
+Designed and conducted workshop for 10 incubation teams on “Rapid Prototyping and 
+validation through scenario tests”. Mentored 30 individuals (Unfamiliar with interaction 
+design tools) to design prototypes and come up with validation plans. Two of  the teams’ 
+prototype is given here as examples.

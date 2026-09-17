@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tamzid Azad Brand Guidelines</title>
+    <style>
+      :root {
+        --ink: #0e1117;
+        --midnight: #17213a;
+        --steel: #53606f;
+        --accent: #7aa6c2;
+        --pearl: #f6f4ef;
+        --white: #ffffff;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        color: var(--ink);
+        background: var(--pearl);
+        font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        line-height: 1.5;
+      }
+
+      main {
+        width: min(1120px, calc(100% - 40px));
+        margin: 0 auto;
+        padding: 64px 0;
+      }
+
+      .hero {
+        padding: 56px;
+        color: var(--white);
+        background: var(--ink);
+        border-radius: 10px;
+      }
+
+      .eyebrow {
+        margin: 0 0 14px;
+        color: var(--accent);
+        font-size: 0.78rem;
+        font-weight: 800;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+      }
+
+      h1,
+      h2,
+      h3,
+      p {
+        margin-top: 0;
+      }
+
+      h1,
+      h2 {
+        font-family: Georgia, "Times New Roman", serif;
+        letter-spacing: 0;
+      }
+
+      h1 {
+        max-width: 760px;
+        margin-bottom: 18px;
+        font-size: clamp(3rem, 7vw, 6.4rem);
+        line-height: 0.95;
+      }
+
+      h2 {
+        margin-bottom: 20px;
+        font-size: clamp(2rem, 4vw, 3.8rem);
+        line-height: 1;
+      }
+
+      .lede {
+        max-width: 680px;
+        margin-bottom: 0;
+        color: rgba(255, 255, 255, 0.78);
+        font-size: 1.25rem;
+      }
+
+      section {
+        margin-top: 44px;
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 16px;
+      }
+
+      .swatch {
+        overflow: hidden;
+        min-height: 250px;
+        border: 1px solid rgba(14, 17, 23, 0.12);
+        border-radius: 10px;
+        background: var(--white);
+      }
+
+      .chip {
+        min-height: 138px;
+      }
+
+      .swatch-content {
+        padding: 18px;
+      }
+
+      .swatch h3 {
+        margin-bottom: 4px;
+        font-size: 1rem;
+      }
+
+      .swatch p {
+        margin-bottom: 10px;
+        color: var(--steel);
+        font-size: 0.92rem;
+      }
+
+      code {
+        display: inline-flex;
+        padding: 5px 8px;
+        border-radius: 6px;
+        color: var(--ink);
+        background: var(--pearl);
+        font-family: "SFMono-Regular", Consolas, monospace;
+        font-size: 0.85rem;
+      }
+
+      .usage {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 16px;
+      }
+
+      .card {
+        padding: 24px;
+        border: 1px solid rgba(14, 17, 23, 0.12);
+        border-radius: 10px;
+        background: var(--white);
+      }
+
+      .sample {
+        display: grid;
+        grid-template-columns: 0.8fr 1.2fr;
+        min-height: 360px;
+        overflow: hidden;
+        border-radius: 10px;
+        background: var(--white);
+        border: 1px solid rgba(14, 17, 23, 0.12);
+      }
+
+      .sample-left {
+        padding: 34px;
+        color: var(--white);
+        background: var(--midnight);
+      }
+
+      .sample-right {
+        padding: 34px;
+      }
+
+      .wordmark {
+        margin-bottom: 16px;
+        font-family: Georgia, "Times New Roman", serif;
+        font-size: 3.4rem;
+        line-height: 0.95;
+      }
+
+      .button {
+        display: inline-flex;
+        min-height: 42px;
+        align-items: center;
+        justify-content: center;
+        padding: 10px 16px;
+        border: 1px solid var(--accent);
+        border-radius: 6px;
+        color: var(--ink);
+        background: var(--accent);
+        font-weight: 750;
+      }
+
+      .small-note {
+        color: var(--steel);
+      }
+
+      @media (max-width: 900px) {
+        .grid,
+        .usage,
+        .sample {
+          grid-template-columns: 1fr;
+        }
+
+        .hero {
+          padding: 34px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <section class="hero">
+        <p class="eyebrow">Brand Guidelines · Direction 03</p>
+        <h1>Midnight Founder</h1>
+        <p class="lede">A premium, modern palette for a product leader, founder, and educator. Serious enough for payments and SaaS, elegant enough for teaching, ventures, and a personal archive.</p>
+      </section>
+
+      <section>
+        <p class="eyebrow">Core Palette</p>
+        <h2>Primary colors</h2>
+        <div class="grid">
+          <article class="swatch">
+            <div class="chip" style="background:#0e1117"></div>
+            <div class="swatch-content">
+              <h3>Ink</h3>
+              <p>Primary text, deep backgrounds, formal anchors.</p>
+              <code>#0E1117</code>
+            </div>
+          </article>
+          <article class="swatch">
+            <div class="chip" style="background:#17213a"></div>
+            <div class="swatch-content">
+              <h3>Midnight</h3>
+              <p>Hero sections, navigation emphasis, page headers.</p>
+              <code>#17213A</code>
+            </div>
+          </article>
+          <article class="swatch">
+            <div class="chip" style="background:#53606f"></div>
+            <div class="swatch-content">
+              <h3>Steel</h3>
+              <p>Secondary text, captions, supporting UI.</p>
+              <code>#53606F</code>
+            </div>
+          </article>
+          <article class="swatch">
+            <div class="chip" style="background:#7aa6c2"></div>
+            <div class="swatch-content">
+              <h3>Glacier</h3>
+              <p>Cool accent for labels, active states, and key details.</p>
+              <code>#7AA6C2</code>
+            </div>
+          </article>
+          <article class="swatch">
+            <div class="chip" style="background:#f6f4ef"></div>
+            <div class="swatch-content">
+              <h3>Pearl</h3>
+              <p>Main page background, quiet whitespace.</p>
+              <code>#F6F4EF</code>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section>
+        <p class="eyebrow">Usage</p>
+        <h2>How the palette should behave</h2>
+        <div class="usage">
+          <article class="card">
+            <h3>Dominant feeling</h3>
+            <p class="small-note">Use Pearl and Ink as the foundation. Let the site feel calm, spacious, and editorial. Midnight should appear in strong moments, not everywhere.</p>
+          </article>
+          <article class="card">
+            <h3>Accent rule</h3>
+            <p class="small-note">Glacier should be restrained: labels, small dividers, subtle buttons, timeline markers, or a single highlight in a section.</p>
+          </article>
+          <article class="card">
+            <h3>Avoid</h3>
+            <p class="small-note">Avoid bright blue, heavy gradients, oversized cards, and too many accent surfaces. The site should feel composed, not decorative.</p>
+          </article>
+        </div>
+      </section>
+
+      <section>
+        <p class="eyebrow">Typography Direction</p>
+        <h2>Editorial, premium, readable</h2>
+        <div class="sample">
+          <div class="sample-left">
+            <p class="eyebrow">Wordmark direction</p>
+            <div class="wordmark">Tamzid Azad</div>
+            <p>Elegant serif/calligraphic wordmark. Refined, not ornamental. This can later become a custom logo treatment.</p>
+          </div>
+          <div class="sample-right">
+            <p class="eyebrow">Sample page language</p>
+            <h2>Product builder. Venture operator. Educator.</h2>
+            <p class="small-note">The body type should stay modern and clear. Pair a refined serif for headlines with a clean sans-serif for readable long-form career stories.</p>
+            <a class="button">Primary action</a>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

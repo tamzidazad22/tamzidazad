@@ -1,0 +1,32 @@
+{
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "redirects": [
+    {
+      "source": "/(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "tamzidazad.vercel.app"
+        }
+      ],
+      "destination": "https://tamzidazad.com/$1",
+      "permanent": true
+    },
+    {
+      "source": "/work",
+      "destination": "/product-management",
+      "permanent": true
+    },
+    {
+      "source": "/courses",
+      "destination": "/teaching",
+      "permanent": true
+    },
+    {
+      "source": "/contact",
+      "destination": "/teaching",
+      "permanent": false
+    }
+  ]
+}
