@@ -1,3 +1,7 @@
 extracted_sources/
 assets_from_deck/
 assets/
+output/
+tools/
+*.docx
+build_vp_resume.py

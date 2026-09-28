@@ -25,7 +25,7 @@
     },
     {
       "source": "/contact",
-      "destination": "/teaching",
+      "destination": "/#contact",
       "permanent": false
     }
   ]

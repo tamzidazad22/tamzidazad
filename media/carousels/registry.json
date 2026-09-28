@@ -1,0 +1,41 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "TamzidAzad Media Carousel Registry",
+  "description": "Structured metadata repository for website media stories and photo carousels.",
+  "carousels": {
+    "schulich-startup-night-2021": {
+      "id": "schulich-startup-night-2021",
+      "title": "Schulich Startup Night 2021 Archive",
+      "relatedPage": "ventures",
+      "summary": "Moments from Schulich Startup Night 2021, convening founders, mentors, sponsors, and the university entrepreneurship ecosystem.",
+      "items": [
+        {
+          "id": "ssn-2021-speaking",
+          "src": "/media/ventures/schulich-startup-night-2021-speaking.jpeg",
+          "alt": "Tamzid Azad speaking with a microphone on stage at Schulich Startup Night 2021 in Toronto",
+          "caption": "Tamzid Azad speaking at Schulich Startup Night 2021 · Toronto",
+          "year": 2021,
+          "event": "Schulich Startup Night 2021",
+          "project": "Schulich Startups",
+          "order": 1,
+          "relatedPage": "ventures",
+          "width": 1600,
+          "height": 1067
+        },
+        {
+          "id": "ssn-2021-awards",
+          "src": "/media/ventures/schulich-startup-night-2021-awards.jpeg",
+          "alt": "Tamzid Azad on stage during the awards presentation at Schulich Startup Night 2021",
+          "caption": "Startup Night awards and sponsor recognition · Toronto",
+          "year": 2021,
+          "event": "Schulich Startup Night 2021",
+          "project": "Schulich Startups",
+          "order": 2,
+          "relatedPage": "ventures",
+          "width": 1600,
+          "height": 1067
+        }
+      ]
+    }
+  }
+}

@@ -3,4 +3,6 @@
 node_modules/
 tmp/
 *.log
+*.docx
+build_vp_resume.py
 

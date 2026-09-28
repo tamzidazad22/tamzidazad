@@ -36,6 +36,25 @@ a {
   text-decoration: none;
 }
 
+.skip-link {
+  position: absolute;
+  top: -100px;
+  left: 20px;
+  z-index: 100;
+  padding: 10px 16px;
+  background: var(--midnight);
+  color: #fff;
+  border-radius: 4px;
+  font-weight: 750;
+  font-size: 0.9rem;
+  text-decoration: none;
+  transition: top 0.2s ease;
+}
+
+.skip-link:focus {
+  top: 16px;
+}
+
 .site-header {
   position: sticky;
   top: 0;
@@ -130,7 +149,7 @@ p {
 
 h1 {
   margin-bottom: 18px;
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: "EB Garamond", Garamond, "Baskerville", Georgia, serif;
   font-size: clamp(2.8rem, 5.2vw, 5.4rem);
   line-height: 1;
   letter-spacing: 0;
@@ -139,7 +158,7 @@ h1 {
 h2 {
   max-width: 920px;
   margin-bottom: 24px;
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: "EB Garamond", Garamond, "Baskerville", Georgia, serif;
   font-size: clamp(1.8rem, 3.6vw, 3.45rem);
   line-height: 1;
   letter-spacing: 0;
@@ -249,7 +268,7 @@ h3 {
   border: 1px solid var(--line);
   border-radius: 50%;
   color: var(--midnight);
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: "EB Garamond", Garamond, "Baskerville", Georgia, serif;
   font-size: 1.35rem;
   font-weight: 700;
 }
@@ -296,9 +315,11 @@ h3 {
 .stats strong {
   display: block;
   color: var(--midnight);
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: clamp(1.85rem, 3.3vw, 3.35rem);
-  line-height: 1;
+  font-family: "EB Garamond", Garamond, "Baskerville", Georgia, serif;
+  font-size: clamp(1.65rem, 2.8vw, 3rem);
+  line-height: 1.05;
+  margin-bottom: 4px;
+  letter-spacing: -0.01em;
 }
 
 .stats span {
@@ -607,7 +628,7 @@ footer {
 .hero-portrait strong {
   display: block;
   margin-bottom: 2px;
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: "EB Garamond", Garamond, "Baskerville", Georgia, serif;
   font-size: 1.15rem;
   font-weight: 600;
 }
@@ -726,7 +747,7 @@ footer {
   padding: 18px 0;
   border-top: 1px solid rgba(255, 255, 255, 0.3);
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: "EB Garamond", Garamond, "Baskerville", Georgia, serif;
   font-size: clamp(1.18rem, 2.2vw, 1.8rem);
 }
 
@@ -777,10 +798,210 @@ footer {
   font-size: 0.92rem;
 }
 
+/* ------------------------------------------------------------- carousel */
+
+.carousel-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+}
+
+.carousel-track {
+  display: flex;
+  gap: 18px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  padding-bottom: 6px;
+}
+
+.carousel-track::-webkit-scrollbar {
+  display: none;
+}
+
+.carousel-slide {
+  flex: 0 0 100%;
+  scroll-snap-align: start;
+  margin: 0;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  overflow: hidden;
+  background: var(--panel);
+  box-shadow: var(--shadow);
+  display: flex;
+  flex-direction: column;
+}
+
+.carousel-slide img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+}
+
+.carousel-slide figcaption {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 18px 22px;
+}
+
+.carousel-tag {
+  display: block;
+  color: var(--glacier-deep);
+  font-size: 0.74rem;
+  font-weight: 850;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.carousel-slide p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.94rem;
+  line-height: 1.45;
+}
+
+.carousel-controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4px 2px;
+}
+
+.carousel-nav-group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.carousel-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: var(--panel);
+  color: var(--midnight);
+  font-size: 1.15rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  user-select: none;
+}
+
+.carousel-btn:hover:not(:disabled) {
+  border-color: var(--glacier);
+  color: var(--glacier-deep);
+  background: #fff;
+}
+
+.carousel-btn:focus-visible {
+  outline: 2px solid var(--glacier-deep);
+  outline-offset: 2px;
+}
+
+.carousel-btn:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+.carousel-counter {
+  font-size: 0.84rem;
+  font-weight: 750;
+  letter-spacing: 0.1em;
+  color: var(--muted);
+  text-transform: uppercase;
+}
+
+/* --------------------------------------------------------------- awards */
+
+.awards-categories {
+  display: grid;
+  gap: 40px;
+}
+
+.awards-category {
+  display: grid;
+  grid-template-columns: minmax(240px, 0.4fr) minmax(0, 1fr);
+  gap: clamp(24px, 5vw, 64px);
+  padding-bottom: 40px;
+  border-bottom: 1px solid var(--line);
+}
+
+.awards-category:last-child {
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+
+.awards-category-meta h2 {
+  font-size: clamp(1.4rem, 2.2vw, 2.1rem);
+  margin-bottom: 8px;
+}
+
+.awards-category-meta p {
+  color: var(--muted);
+  font-size: 0.94rem;
+  line-height: 1.45;
+}
+
+.awards-list-detailed {
+  display: grid;
+  gap: 14px;
+}
+
+.award-card {
+  padding: 22px 24px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--panel);
+  transition: border-color 0.2s ease;
+}
+
+.award-card:hover {
+  border-color: rgba(122, 166, 194, 0.6);
+}
+
+.award-header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 6px;
+}
+
+.award-header h3 {
+  margin: 0;
+  font-size: 1.15rem;
+  color: var(--ink);
+}
+
+.award-badge {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 850;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--glacier-deep);
+}
+
+.award-card p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.92rem;
+  line-height: 1.45;
+}
+
 @media (max-width: 1050px) {
   .now-band,
   .media-feature,
-  .contact-band {
+  .contact-band,
+  .awards-category {
     grid-template-columns: 1fr;
   }
 }
