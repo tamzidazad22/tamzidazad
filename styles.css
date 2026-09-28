@@ -70,15 +70,29 @@ a {
 }
 
 .mark {
-  display: grid;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   width: 38px;
   height: 38px;
-  place-items: center;
-  color: #fff;
-  background: linear-gradient(135deg, var(--midnight), var(--ink));
-  border-radius: 8px;
-  font-weight: 850;
-  letter-spacing: 0;
+  border-radius: 9px;
+  overflow: hidden;
+  text-decoration: none;
+  line-height: 0;
+  flex-shrink: 0;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.mark:hover {
+  transform: scale(1.05);
+  opacity: 0.92;
+}
+
+.mark img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
 nav {
