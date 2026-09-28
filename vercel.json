@@ -27,6 +27,11 @@
       "source": "/contact",
       "destination": "/#contact",
       "permanent": false
+    },
+    {
+      "source": "/innovation-leadership",
+      "destination": "/ventures",
+      "permanent": false
     }
   ]
 }
