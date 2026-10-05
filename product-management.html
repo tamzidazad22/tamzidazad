@@ -41,46 +41,131 @@
     </header>
 
     <main id="main">
-      <section class="page-hero compact">
-        <p class="eyebrow">Product Leadership</p>
-        <h1>Products across payments, vertical SaaS, hospitality, and enterprise IoT.</h1>
-        <p class="lede">
-          Over more than a decade, my product work has centered on turning complex systems into clear, scalable experiences.
-          Prior to founding Doodlepad, I led product strategy and execution across payments portfolios processing over $2Bn, scaled autonomous checkout to 600K monthly transactions, and brought enterprise IoT solutions to international markets.
-        </p>
+      <!-- 1 — Author Intro Block with Studio Portrait (Minimalist & Visual) -->
+      <section class="author-portrait-block">
+        <figure class="author-portrait-figure">
+          <img src="/media/tamzid-azad-portrait.webp" width="1383" height="1800" fetchpriority="high"
+               alt="Tamzid Azad studio portrait">
+        </figure>
+        <div class="author-portrait-copy">
+          <p class="eyebrow">Product Leadership</p>
+          <h1>Turning complex systems into products people love.</h1>
+          <p class="lede">
+            Over the past decade, I've led product teams across payments, vertical SaaS, autonomous checkout, and enterprise IoT.
+          </p>
+          <p>
+            Whether building $2Bn+ payment infrastructure from scratch or scaling checkout engines to 600K monthly transactions, my operating philosophy is straightforward: find the friction, remove the noise, align engineering and design, and ship software that creates undeniable value.
+          </p>
+          <div class="hero-actions" style="margin-top: 8px;">
+            <a class="button primary" href="#case-studies">Explore shipped work ↓</a>
+            <a class="button secondary" href="mailto:tamzidazad1@gmail.com">Let's talk product ↗</a>
+          </div>
+        </div>
       </section>
 
-      <section class="section timeline-page">
-        <article>
-          <span>Feb 2024 – Apr 2026</span>
-          <div>
-            <h2>Senior Product Manager, POS &amp; Payments</h2>
-            <h3>Jonas Software / Constellation Software</h3>
-            <p>Defined payments strategy for a portfolio processing $2Bn across cards and bank transfers, led the end-to-end launch of Jonas Pay, developed pricing and risk frameworks, and scaled Mobile POS to 90 active clients in 8 months.</p>
+      <!-- 2 — Visual Case Study Cards (Image & Visual Driven) -->
+      <section class="case-study-grid" id="case-studies" aria-label="Product case studies">
+        <!-- 1: Jonas Software -->
+        <article class="case-study-card">
+          <div class="case-study-top">
+            <div class="case-study-meta">
+              <span>Feb 2024 – Apr 2026 · Constellation Software</span>
+              <h2>Jonas Software Payments &amp; POS</h2>
+              <h3>Senior Product Manager, POS &amp; Payments</h3>
+            </div>
+            <div class="metric-badge">
+              <strong>$2Bn+</strong>
+              <span>Annual Volume</span>
+            </div>
+          </div>
+          <ul class="case-study-points">
+            <li>Directed the end-to-end payments strategy across credit card and ACH/bank transfer rails for a multi-billion dollar private club and hospitality vertical.</li>
+            <li>Conceived and shipped <strong>Jonas Pay</strong> from scratch, establishing automated merchant underwriting, custom interchange pricing, and risk management models.</li>
+            <li>Scaled Mobile POS adoption across 90 enterprise golf and club facilities in 8 months, slashing order turnaround times and front-of-house friction.</li>
+          </ul>
+          <div class="tag-list">
+            <span class="tag">#FinTech</span>
+            <span class="tag">#Payments</span>
+            <span class="tag">#VerticalSaaS</span>
+            <span class="tag">#ConstellationSoftware</span>
+            <span class="tag">#MobilePOS</span>
           </div>
         </article>
-        <article>
-          <span>Dec 2021 – Jan 2024</span>
-          <div>
-            <h2>Product Manager, Checkout &amp; Payments</h2>
-            <h3>Compass Digital</h3>
-            <p>Led cross-functional delivery for Boost and Thrive checkout experiences, scaling to 600K monthly transactions through payment integrations, loyalty, autonomous checkout, and dining-hall reservation features.</p>
+
+        <!-- 2: Compass Digital -->
+        <article class="case-study-card">
+          <div class="case-study-top">
+            <div class="case-study-meta">
+              <span>Dec 2021 – Jan 2024 · Compass Group</span>
+              <h2>Boost &amp; Thrive Checkout Platforms</h2>
+              <h3>Product Manager, Checkout &amp; Digital Experience</h3>
+            </div>
+            <div class="metric-badge">
+              <strong>600K/mo</strong>
+              <span>Transactions</span>
+            </div>
+          </div>
+          <ul class="case-study-points">
+            <li>Led cross-functional engineering and design pods delivering mobile ordering, contactless checkout, and kiosk solutions across hundreds of high-volume dining venues.</li>
+            <li>Scaled monthly throughput by ~200% year-over-year while cutting transaction latency and cart abandonment rates.</li>
+            <li>Shipped autonomous grab-and-go integrations, dining hall reservation systems, campus card payment rails, and customer loyalty mechanics.</li>
+          </ul>
+          <div class="tag-list">
+            <span class="tag">#AutonomousCheckout</span>
+            <span class="tag">#HighVolume</span>
+            <span class="tag">#MobileCommerce</span>
+            <span class="tag">#Payments</span>
+            <span class="tag">#Loyalty</span>
           </div>
         </article>
-        <article>
-          <span>2017–2018</span>
-          <div>
-            <h2>Eagle Eye Fuel-Tracking IoT Platform</h2>
-            <h3>Telenor Group</h3>
-            <p>Led research, design, hardware integration, agile development sprints, roadmap, partnerships, and go-to-market for an enterprise IoT solution tackling commercial fleet fuel theft across South Asia.</p>
+
+        <!-- 3: Telenor Group -->
+        <article class="case-study-card">
+          <div class="case-study-top">
+            <div class="case-study-meta">
+              <span>2017 – 2018 · Telenor Group</span>
+              <h2>Eagle Eye IoT Fuel Analytics</h2>
+              <h3>Product Lead, IoT Platform</h3>
+            </div>
+            <div class="metric-badge">
+              <strong>Global 1st</strong>
+              <span>135 Teams · 13 Countries</span>
+            </div>
+          </div>
+          <ul class="case-study-points">
+            <li>Spearheaded product discovery, hardware sensor calibration, and agile software development for an enterprise IoT platform combating commercial fleet fuel theft across South Asia.</li>
+            <li>Won 1st place globally at the Telenor Ignite competition against 135 international teams, securing corporate seed incubation and live industrial pilot deployments.</li>
+          </ul>
+          <div class="tag-list">
+            <span class="tag">#EnterpriseIoT</span>
+            <span class="tag">#HardwarePlusSaaS</span>
+            <span class="tag">#Telematics</span>
+            <span class="tag">#GlobalInnovation</span>
           </div>
         </article>
-        <article>
-          <span>Aug 2015 – Nov 2016</span>
-          <div>
-            <h2>Vehicle Tracking &amp; Digital Services</h2>
-            <h3>Robi Axiata</h3>
-            <p>Managed the enterprise vehicle-tracking and telematics portfolio, growing revenue 4x in 10 months to CAD $200K per month by expanding B2C, B2B, and B2B2C channels.</p>
+
+        <!-- 4: Robi Axiata -->
+        <article class="case-study-card">
+          <div class="case-study-top">
+            <div class="case-study-meta">
+              <span>Aug 2015 – Nov 2016 · Axiata Group</span>
+              <h2>Enterprise Fleet Telematics</h2>
+              <h3>Product Manager, Digital Services &amp; IoT</h3>
+            </div>
+            <div class="metric-badge">
+              <strong>4x Revenue</strong>
+              <span>CAD $200K / Month</span>
+            </div>
+          </div>
+          <ul class="case-study-points">
+            <li>Managed the vehicle tracking, remote diagnostics, and telematics portfolio across B2B enterprise fleets and B2B2C partner distribution channels.</li>
+            <li>Quadrupled monthly recurring revenues within 10 months by re-architecting customer onboarding, expanding distributor channels, and introducing tiered SaaS pricing.</li>
+          </ul>
+          <div class="tag-list">
+            <span class="tag">#ConnectedVehicles</span>
+            <span class="tag">#Telematics</span>
+            <span class="tag">#B2BGrowth</span>
+            <span class="tag">#SaaS</span>
           </div>
         </article>
       </section>

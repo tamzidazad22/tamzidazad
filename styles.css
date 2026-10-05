@@ -1055,3 +1055,329 @@ footer {
     font-size: 0.8rem;
   }
 }
+
+/* -------------------------------------------------- Modern Minimalist Additions */
+
+/* Headings text-wrap for balanced legibility (modern web guidance) */
+h1, h2, h3 {
+  text-wrap: balance;
+}
+
+.lede, p {
+  text-wrap: pretty;
+}
+
+/* Doodlepad Visual Showcase */
+.doodlepad-showcase {
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(320px, 0.85fr);
+  gap: clamp(28px, 4vw, 56px);
+  align-items: center;
+  padding: clamp(32px, 5vw, 64px) clamp(20px, 5.2vw, 70px);
+  background: #ffffff;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.doodlepad-visual {
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #fbf9f4;
+  border: 1px solid var(--line);
+  box-shadow: 0 12px 32px rgba(14, 17, 23, 0.05);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.doodlepad-visual:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 18px 42px rgba(14, 17, 23, 0.09);
+}
+
+.doodlepad-visual img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.doodlepad-content {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.doodlepad-brand {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.doodlepad-brand img {
+  height: 34px;
+  width: auto;
+  object-fit: contain;
+}
+
+.doodlepad-content h2 {
+  margin-bottom: 0;
+  font-size: clamp(1.8rem, 2.8vw, 2.6rem);
+  line-height: 1.1;
+}
+
+.doodlepad-content p {
+  color: var(--muted);
+  font-size: clamp(0.98rem, 1.25vw, 1.12rem);
+  line-height: 1.5;
+  margin-bottom: 0;
+}
+
+/* Milestone Pill Badges */
+.milestone-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 6px 0 10px;
+}
+
+.milestone-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  border-radius: 999px;
+  background: rgba(91, 124, 153, 0.08);
+  border: 1px solid rgba(91, 124, 153, 0.2);
+  color: var(--glacier-deep);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.milestone-pill svg,
+.milestone-pill .check {
+  font-weight: 900;
+  color: var(--glacier-deep);
+}
+
+/* Author Portrait Block (Product / About) */
+.author-portrait-block {
+  display: grid;
+  grid-template-columns: minmax(280px, 0.65fr) minmax(0, 1.35fr);
+  gap: clamp(28px, 5vw, 64px);
+  align-items: center;
+  padding: clamp(48px, 6vw, 84px) clamp(20px, 5.2vw, 70px);
+  background: var(--paper);
+  border-bottom: 1px solid var(--line);
+}
+
+.author-portrait-figure {
+  margin: 0;
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  box-shadow: 0 16px 36px rgba(14, 17, 23, 0.06);
+  background: #f4f2ee;
+}
+
+.author-portrait-figure img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  object-position: center 20%;
+}
+
+.author-portrait-copy {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.author-portrait-copy h1 {
+  margin-bottom: 4px;
+}
+
+.author-portrait-copy .lede {
+  color: var(--midnight);
+  font-weight: 500;
+  line-height: 1.45;
+}
+
+.author-portrait-copy p {
+  color: var(--muted);
+  font-size: 1.05rem;
+  line-height: 1.55;
+  margin-bottom: 0;
+}
+
+/* Case Study Cards (Product Page) */
+.case-study-grid {
+  display: grid;
+  gap: 24px;
+  padding: clamp(48px, 6vw, 84px) clamp(20px, 5.2vw, 70px);
+}
+
+.case-study-card {
+  padding: clamp(24px, 3.5vw, 36px);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: #ffffff;
+  box-shadow: 0 4px 18px rgba(14, 17, 23, 0.03);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.case-study-card:hover {
+  transform: translateY(-2px);
+  border-color: rgba(91, 124, 153, 0.4);
+  box-shadow: 0 12px 30px rgba(14, 17, 23, 0.06);
+}
+
+.case-study-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-bottom: 16px;
+}
+
+.case-study-meta span {
+  display: block;
+  font-size: 0.76rem;
+  font-weight: 850;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--glacier-deep);
+  margin-bottom: 4px;
+}
+
+.case-study-meta h2 {
+  font-size: clamp(1.4rem, 2.2vw, 2.1rem);
+  margin-bottom: 4px;
+}
+
+.case-study-meta h3 {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--muted);
+  margin-bottom: 0;
+}
+
+.metric-badge {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 8px 16px;
+  background: rgba(23, 33, 58, 0.04);
+  border: 1px solid rgba(23, 33, 58, 0.1);
+  border-radius: 8px;
+}
+
+.metric-badge strong {
+  font-family: "EB Garamond", Garamond, Georgia, serif;
+  font-size: 1.6rem;
+  line-height: 1;
+  color: var(--midnight);
+}
+
+.metric-badge span {
+  font-size: 0.72rem;
+  font-weight: 750;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--muted);
+  margin-top: 2px;
+}
+
+.case-study-points {
+  margin: 18px 0;
+  padding-left: 20px;
+  color: var(--muted);
+  font-size: 1.02rem;
+  line-height: 1.6;
+}
+
+.case-study-points li {
+  margin-bottom: 8px;
+}
+
+.case-study-points li:last-child {
+  margin-bottom: 0;
+}
+
+.tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 18px;
+}
+
+.tag {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 4px;
+  background: var(--paper);
+  border: 1px solid var(--line);
+  font-size: 0.78rem;
+  font-weight: 650;
+  color: var(--muted);
+}
+
+/* Minimalist Recognition Cards */
+.recognition-grid-modern {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  align-self: center;
+}
+
+.recognition-item-card {
+  padding: 20px;
+  border-radius: 8px;
+  background: var(--panel);
+  border: 1px solid var(--line);
+  transition: border-color 0.2s ease;
+}
+
+.recognition-item-card:hover {
+  border-color: rgba(91, 124, 153, 0.4);
+}
+
+.recognition-item-card span {
+  display: block;
+  font-size: 0.72rem;
+  font-weight: 850;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--glacier-deep);
+  margin-bottom: 6px;
+}
+
+.recognition-item-card strong {
+  display: block;
+  font-size: 1.05rem;
+  color: var(--ink);
+  line-height: 1.35;
+}
+
+/* Responsive adjustments for modern additions */
+@media (max-width: 960px) {
+  .doodlepad-showcase {
+    grid-template-columns: 1fr;
+  }
+
+  .author-portrait-block {
+    grid-template-columns: 1fr;
+  }
+
+  .author-portrait-figure {
+    max-width: 420px;
+    margin: 0 auto;
+  }
+
+  .recognition-grid-modern {
+    grid-template-columns: 1fr;
+  }
+}
+
