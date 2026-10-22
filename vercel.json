@@ -7,7 +7,7 @@
       "has": [
         {
           "type": "host",
-          "value": "tamzidazad.vercel.app"
+          "value": "tamzidazad-one.vercel.app"
         }
       ],
       "destination": "https://tamzidazad.com/$1",
@@ -15,12 +15,12 @@
     },
     {
       "source": "/work",
-      "destination": "/#product",
+      "destination": "/#work",
       "permanent": true
     },
     {
       "source": "/product-management",
-      "destination": "/#product",
+      "destination": "/#experience",
       "permanent": true
     },
     {
@@ -35,7 +35,7 @@
     },
     {
       "source": "/ventures",
-      "destination": "/#ventures",
+      "destination": "/#doodlepad",
       "permanent": true
     },
     {
@@ -50,7 +50,7 @@
     },
     {
       "source": "/innovation-leadership",
-      "destination": "/#ventures",
+      "destination": "/#doodlepad",
       "permanent": true
     }
   ]
