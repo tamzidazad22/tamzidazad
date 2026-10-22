@@ -15,12 +15,32 @@
     },
     {
       "source": "/work",
-      "destination": "/product-management",
+      "destination": "/#product",
+      "permanent": true
+    },
+    {
+      "source": "/product-management",
+      "destination": "/#product",
       "permanent": true
     },
     {
       "source": "/courses",
-      "destination": "/teaching",
+      "destination": "/#teaching",
+      "permanent": true
+    },
+    {
+      "source": "/teaching",
+      "destination": "/#teaching",
+      "permanent": true
+    },
+    {
+      "source": "/ventures",
+      "destination": "/#ventures",
+      "permanent": true
+    },
+    {
+      "source": "/awards",
+      "destination": "/#recognition",
       "permanent": true
     },
     {
@@ -30,8 +50,8 @@
     },
     {
       "source": "/innovation-leadership",
-      "destination": "/ventures",
-      "permanent": false
+      "destination": "/#ventures",
+      "permanent": true
     }
   ]
 }
