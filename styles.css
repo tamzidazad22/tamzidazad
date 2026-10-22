@@ -7,19 +7,19 @@
 :root {
   /* base — near-monochrome */
   --bg:        #ffffff;
-  --bg-soft:   #fafafa;
+  --bg-soft:   #f6f7f9;
   --bg-elev:   #ffffff;
-  --ink:       #0a0a0b;
-  --ink-soft:  #3f3f46;
-  --muted:     #71717a;
-  --faint:     #a1a1aa;
-  --line:      rgba(10, 10, 20, 0.08);
-  --line-strong: rgba(10, 10, 20, 0.15);
+  --ink:       #0d1117;
+  --ink-soft:  #3a3f4a;
+  --muted:     #6b7280;
+  --faint:     #9aa1ac;
+  --line:      rgba(13, 17, 23, 0.09);
+  --line-strong: rgba(13, 17, 23, 0.16);
 
-  /* one warm accent — copper */
-  --accent:      #c2552e;
-  --accent-deep: #a8441f;
-  --accent-tint: rgba(194, 85, 46, 0.10);
+  /* monochrome — ink is the accent (matches the logo) */
+  --accent:      #0d1117;
+  --accent-deep: #2b3340;
+  --accent-tint: rgba(13, 17, 23, 0.06);
 
   --font: "Geist", system-ui, -apple-system, sans-serif;
 
@@ -76,8 +76,8 @@ section { padding-block: clamp(70px, 9vw, 128px); }
   transition: transform .18s ease, box-shadow .25s ease, background .2s ease, border-color .2s ease, color .2s ease;
   white-space: nowrap;
 }
-.btn-primary { color: #fff; background: var(--accent); box-shadow: 0 8px 20px rgba(194,85,46,0.26); }
-.btn-primary:hover { background: var(--accent-deep); transform: translateY(-2px); box-shadow: 0 14px 28px rgba(194,85,46,0.32); }
+.btn-primary { color: #fff; background: var(--accent); box-shadow: 0 8px 20px rgba(13,17,23,0.18); }
+.btn-primary:hover { background: var(--accent-deep); transform: translateY(-2px); box-shadow: 0 14px 28px rgba(13,17,23,0.24); }
 .btn-ghost { color: var(--ink); background: var(--bg-elev); border: 1px solid var(--line-strong); }
 .btn-ghost:hover { transform: translateY(-2px); border-color: var(--ink); }
 .btn-lg { padding: 16px 30px; font-size: 1.06rem; }
@@ -94,7 +94,7 @@ section { padding-block: clamp(70px, 9vw, 128px); }
 }
 .site-header.is-scrolled { border-bottom-color: var(--line); }
 .wordmark { display: inline-flex; align-items: center; gap: 10px; font-weight: 600; font-size: 1.05rem; letter-spacing: -0.01em; }
-.wordmark-mark { width: 13px; height: 13px; border-radius: 4px; background: var(--accent); }
+.wordmark-logo { width: 32px; height: 32px; border-radius: 8px; display: block; }
 .site-header nav { display: flex; align-items: center; gap: 4px; }
 .site-header nav a { font-size: 0.92rem; color: var(--ink-soft); font-weight: 500; padding: 8px 14px; border-radius: 999px; transition: color .2s, background .2s; }
 .site-header nav a:hover { color: var(--ink); background: rgba(10,10,20,0.04); }
@@ -109,8 +109,8 @@ section { padding-block: clamp(70px, 9vw, 128px); }
 .halo {
   position: absolute; inset: 0;
   background:
-    radial-gradient(52% 46% at 82% 8%, rgba(194,85,46,0.12), transparent 68%),
-    radial-gradient(44% 40% at 12% 16%, rgba(10,10,30,0.045), transparent 70%);
+    radial-gradient(52% 46% at 82% 8%, rgba(13,17,23,0.06), transparent 68%),
+    radial-gradient(44% 40% at 12% 16%, rgba(13,17,23,0.038), transparent 70%);
 }
 .grid-overlay {
   position: absolute; inset: 0;
@@ -183,14 +183,29 @@ section { padding-block: clamp(70px, 9vw, 128px); }
 .card-soft { box-shadow: none; background: var(--bg-soft); }
 
 /* ============================================================
-   DOODLEPAD FEATURE
+   VENTURES — BUILDING NOW
    ============================================================ */
-.feature { display: grid; grid-template-columns: 0.9fr 1.1fr; gap: clamp(32px, 5vw, 68px); align-items: center; }
-.feature-copy h2 { font-size: clamp(2.4rem, 5vw, 3.4rem); margin-bottom: 14px; }
-.feature-lede { font-size: 1.28rem; font-weight: 600; color: var(--ink); margin-bottom: 12px; letter-spacing: -0.02em; }
-.feature-copy p { color: var(--muted); max-width: 42ch; margin-bottom: 26px; }
-.feature-visual { margin: 0; }
-.feature-visual img { border-radius: var(--radius); box-shadow: var(--shadow-lg); border: 1px solid var(--line); }
+.venture-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+.venture-card {
+  display: flex; flex-direction: column;
+  background: var(--bg-elev); border: 1px solid var(--line); border-radius: var(--radius-lg);
+  overflow: hidden; box-shadow: var(--shadow);
+  transition: transform .22s ease, box-shadow .25s ease, border-color .25s ease;
+}
+.venture-card:hover { transform: translateY(-5px); box-shadow: var(--shadow-lg); }
+.venture-cover { aspect-ratio: 16 / 10; overflow: hidden; background: var(--bg-soft); border-bottom: 1px solid var(--line); }
+.venture-cover img { width: 100%; height: 100%; object-fit: cover; }
+.venture-cover--mnc {
+  display: flex; align-items: center; justify-content: center;
+  background: var(--ink);
+  background-image: radial-gradient(60% 80% at 50% 0%, rgba(255,255,255,0.08), transparent 70%);
+}
+.venture-cover--mnc span { color: #fff; font-weight: 600; font-size: 1.7rem; letter-spacing: -0.02em; }
+.venture-body { display: flex; flex-direction: column; align-items: flex-start; gap: 8px; padding: 28px 28px 30px; }
+.venture-body h3 { font-size: 1.5rem; }
+.venture-tag { font-weight: 600; color: var(--ink); }
+.venture-body > p:not(.venture-tag) { color: var(--muted); font-size: 0.98rem; }
+.venture-body .card-link { margin-top: 12px; }
 
 /* ============================================================
    EXPERIENCE TIMELINE
@@ -217,7 +232,7 @@ section { padding-block: clamp(70px, 9vw, 128px); }
 .contact { position: relative; overflow: hidden; text-align: center; background: var(--bg-soft); }
 .contact::before {
   content: ""; position: absolute; inset: 0; pointer-events: none;
-  background: radial-gradient(45% 60% at 50% 0%, rgba(194,85,46,0.10), transparent 70%);
+  background: radial-gradient(45% 60% at 50% 0%, rgba(13,17,23,0.05), transparent 70%);
 }
 .contact-inner { position: relative; z-index: 1; }
 .contact h2 { font-size: clamp(2.2rem, 5vw, 3.4rem); margin-bottom: 32px; }
@@ -245,8 +260,7 @@ footer { display: flex; justify-content: space-between; align-items: center; fle
 @media (max-width: 920px) {
   .hero-inner { grid-template-columns: 1fr; gap: 36px; }
   .hero-photo { order: 2; }
-  .feature { grid-template-columns: 1fr; }
-  .feature-visual { order: -1; }
+  .venture-grid { grid-template-columns: 1fr; }
   .metrics { grid-template-columns: repeat(2, 1fr); }
   .cards { grid-template-columns: 1fr 1fr; }
 }

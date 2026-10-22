@@ -25,14 +25,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/styles.css?v=20261022-r3">
+    <link rel="stylesheet" href="/styles.css?v=20261022-r4">
   </head>
   <body class="home-page">
     <a class="skip-link" href="#main">Skip to main content</a>
 
     <header class="site-header">
       <a class="wordmark" href="/" aria-label="Tamzid Azad home">
-        <span class="wordmark-mark" aria-hidden="true"></span>
+        <img class="wordmark-logo" src="/assets/logo.webp" width="34" height="34" alt="" aria-hidden="true">
         Tamzid Azad
       </a>
       <nav aria-label="Primary navigation">
@@ -56,7 +56,7 @@
             <p class="eyebrow">Founder · Product leader · Educator</p>
             <h1 id="intro-title">I'm Tamzid Azad<span class="accent-dot">.</span></h1>
             <p class="hero-lede">I build products that make complex technology feel effortless.</p>
-            <p class="hero-sub">Founder &amp; CEO of <strong>Doodlepad</strong> · Schulich instructor · a decade across payments, commerce &amp; IoT.</p>
+            <p class="hero-sub">Founder of <strong>Doodlepad</strong> &amp; <strong>MyNextCoffee</strong> · Schulich instructor · a decade across payments, commerce &amp; IoT.</p>
             <div class="hero-actions">
               <a class="btn btn-primary" href="#work">Explore my work</a>
               <a class="btn btn-ghost" href="mailto:tamzidazad1@gmail.com">Get in touch <span aria-hidden="true">↗</span></a>
@@ -73,10 +73,10 @@
 
       <!-- METRICS -->
       <section class="metrics" aria-label="Career highlights">
-        <div class="metric" data-reveal><strong>$2Bn<span>+</span></strong><span class="metric-label">annual payments volume</span></div>
-        <div class="metric" data-reveal><strong>600K</strong><span class="metric-label">monthly transactions</span></div>
-        <div class="metric" data-reveal><strong>150<span>+</span></strong><span class="metric-label">startups backed</span></div>
-        <div class="metric" data-reveal><strong>10<span>+</span></strong><span class="metric-label">years shipping products</span></div>
+        <div class="metric" data-reveal><strong>0<span>→</span>1</strong><span class="metric-label">product expert</span></div>
+        <div class="metric" data-reveal><strong>150<span>+</span></strong><span class="metric-label">startups &amp; teams helped</span></div>
+        <div class="metric" data-reveal><strong>$2Bn<span>+</span></strong><span class="metric-label">portfolios scaled</span></div>
+        <div class="metric" data-reveal><strong>10<span>+</span></strong><span class="metric-label">years building products</span></div>
       </section>
 
       <!-- WHAT I DO -->
@@ -88,8 +88,8 @@
         <div class="cards">
           <article class="card" data-reveal>
             <span class="card-tag">Building now</span>
-            <h3>Doodlepad</h3>
-            <p>An operating system for homeschooling families and microschools.</p>
+            <h3>Ventures</h3>
+            <p>Founder of Doodlepad and MyNextCoffee — home learning and student careers.</p>
             <a class="card-link" href="#doodlepad">Explore <span aria-hidden="true">→</span></a>
           </article>
           <article class="card" data-reveal>
@@ -107,18 +107,34 @@
         </div>
       </section>
 
-      <!-- DOODLEPAD FEATURE -->
-      <section class="feature" id="doodlepad" aria-labelledby="doodlepad-title">
-        <div class="feature-copy" data-reveal>
+      <!-- VENTURES: BUILDING NOW -->
+      <section class="ventures" id="doodlepad" aria-labelledby="ventures-title">
+        <header class="section-head" data-reveal>
           <p class="eyebrow">Building now</p>
-          <h2 id="doodlepad-title">Doodlepad</h2>
-          <p class="feature-lede">The operating system for homeschooling.</p>
-          <p>Plan curriculum, generate learning resources, and follow progress — in one calm workspace.</p>
-          <a class="btn btn-primary" href="https://doodlepad.ai" target="_blank" rel="noopener">Visit Doodlepad <span aria-hidden="true">↗</span></a>
+          <h2 id="ventures-title">Two products in the works.</h2>
+        </header>
+        <div class="venture-grid">
+          <article class="venture-card" data-reveal>
+            <div class="venture-cover">
+              <img src="/media/doodlepad/doodlepad-laptop.webp" width="1774" height="887" loading="lazy" decoding="async" alt="Doodlepad home-learning platform on a laptop">
+            </div>
+            <div class="venture-body">
+              <h3>Doodlepad</h3>
+              <p class="venture-tag">The operating system for homeschooling.</p>
+              <p>Plan curriculum, generate learning resources, and follow progress — in one calm workspace.</p>
+              <a class="card-link" href="https://doodlepad.ai" target="_blank" rel="noopener">Visit Doodlepad <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+          <article class="venture-card" data-reveal>
+            <div class="venture-cover venture-cover--mnc"><span>MyNextCoffee</span></div>
+            <div class="venture-body">
+              <h3>MyNextCoffee</h3>
+              <p class="venture-tag">Where students find their next opportunity.</p>
+              <p>Jobs, events, and coffee chats — a career-discovery platform for students.</p>
+              <a class="card-link" href="#contact">Learn more <span aria-hidden="true">→</span></a>
+            </div>
+          </article>
         </div>
-        <figure class="feature-visual" data-reveal>
-          <img src="/media/doodlepad/doodlepad-laptop.webp" width="1774" height="887" loading="lazy" decoding="async" alt="Doodlepad home-learning platform on a laptop">
-        </figure>
       </section>
 
       <!-- EXPERIENCE -->
