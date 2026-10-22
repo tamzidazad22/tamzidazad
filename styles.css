@@ -16,10 +16,10 @@
   --line:      rgba(13, 17, 23, 0.09);
   --line-strong: rgba(13, 17, 23, 0.16);
 
-  /* monochrome — ink is the accent (matches the logo) */
-  --accent:      #0d1117;
-  --accent-deep: #2b3340;
-  --accent-tint: rgba(13, 17, 23, 0.06);
+  /* accent — petrol teal */
+  --accent:      #0e7490;
+  --accent-deep: #0c6378;
+  --accent-tint: rgba(14, 116, 144, 0.09);
 
   --font: "Geist", system-ui, -apple-system, sans-serif;
 
@@ -197,10 +197,14 @@ section { padding-block: clamp(70px, 9vw, 128px); }
 .venture-cover img { width: 100%; height: 100%; object-fit: cover; }
 .venture-cover--mnc {
   display: flex; align-items: center; justify-content: center;
-  background: var(--ink);
-  background-image: radial-gradient(60% 80% at 50% 0%, rgba(255,255,255,0.08), transparent 70%);
+  background: #39213B;
+  background-image: radial-gradient(70% 90% at 50% 0%, rgba(255,255,255,0.07), transparent 70%);
 }
-.venture-cover--mnc span { color: #fff; font-weight: 600; font-size: 1.7rem; letter-spacing: -0.02em; }
+.mnc-lockup { display: flex; align-items: center; gap: 14px; }
+.mnc-mark { width: 56px; height: 56px; flex: none; }
+.mnc-word { font-weight: 700; font-size: 1.4rem; letter-spacing: -0.02em; white-space: nowrap; }
+.mnc-a { color: #FAFAF8; }
+.mnc-b { color: #C8A882; }
 .venture-body { display: flex; flex-direction: column; align-items: flex-start; gap: 8px; padding: 28px 28px 30px; }
 .venture-body h3 { font-size: 1.5rem; }
 .venture-tag { font-weight: 600; color: var(--ink); }
