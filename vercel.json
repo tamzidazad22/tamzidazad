@@ -35,7 +35,7 @@
     },
     {
       "source": "/ventures",
-      "destination": "/#doodlepad",
+      "destination": "/#work",
       "permanent": true
     },
     {
@@ -50,7 +50,7 @@
     },
     {
       "source": "/innovation-leadership",
-      "destination": "/#doodlepad",
+      "destination": "/#work",
       "permanent": true
     }
   ]
